@@ -14,6 +14,10 @@ apply plugin: 'jacoco'
 
 defaultTasks 'run'
 
+jacoco {
+    toolVersion = "0.8.7"
+}
+
 jacocoTestReport {
     reports {
         csv.enabled = true
